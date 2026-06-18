@@ -1,7 +1,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-/* Forcer le retour à une colonne unique sur les terminaux mobiles (< 850px) */
+/* Permet aux fiches de basculer automatiquement sur une colonne unique sur mobile (< 850px) */
 @media screen and (max-width: 850px) {
   .grid-container {
     grid-template-columns: 1fr !important;
@@ -13,56 +13,40 @@
 
   <!-- Bandeau titre -->
   <div style="background:#111827; color:#ffffff; border-radius:16px; padding:24px; margin-bottom:20px;">
-    <h1 style="margin:0 0 8px 0; font-size:26px; line-height:1.15;">Cartographie des acteurs — Projet de ligne THT Amiens – Petit-Caux (forêt d’Eu)</h1>
-    <p style="margin:0; color:#cbd5e1; font-size:14px; line-height:1.45;">Lecture en deux colonnes : rapports de force autour d’un projet de liaison électrique 400 kV entre la Normandie et les Hauts-de-France.</p>
+    <h1 style="margin:0 0 8px 0; font-size:26px; line-height:1.15;">Cartographie des acteurs — Celtic Interconnector</h1>
+    <p style="margin:0; color:#cbd5e1; font-size:14px; line-height:1.45;">Lecture en deux colonnes : interconnexion électrique France-Irlande (porteurs, élus, acteurs techniques, critiques et points de vigilance).</p>
   </div>
 
   <!-- Légende -->
   <div style="display:block; margin:0 0 22px 0; padding:14px 16px; background:#ffffff; border:1px solid #e2e8f0; border-radius:14px;">
-    <span style="display:inline-block;background:#dc2626;color:#fff;padding:6px 10px;border-radius:999px;font-size:12px;margin:4px;">Opposants nommément cités</span>
-    <span style="display:inline-block;background:#7c3aed;color:#fff;padding:6px 10px;border-radius:999px;font-size:12px;margin:4px;">Élus critiques</span>
-    <span style="display:inline-block;background:#2563eb;color:#fff;padding:6px 10px;border-radius:999px;font-size:12px;margin:4px;">Élus favorables / prudents</span>
-    <span style="display:inline-block;background:#f59e0b;color:#fff;padding:6px 10px;border-radius:999px;font-size:12px;margin:4px;">Collectifs citoyens</span>
-    <span style="display:inline-block;background:#ea580c;color:#fff;padding:6px 10px;border-radius:999px;font-size:12px;margin:4px;">Syndicats</span>
-    <span style="display:inline-block;background:#16a34a;color:#fff;padding:6px 10px;border-radius:999px;font-size:12px;margin:4px;">Associations environnementales</span>
-    <span style="display:inline-block;background:#1d4ed8;color:#fff;padding:6px 10px;border-radius:999px;font-size:12px;margin:4px;">Porteurs du projet</span>
-    <span style="display:inline-block;background:#0f766e;color:#fff;padding:6px 10px;border-radius:999px;font-size:12px;margin:4px;">Institutions</span>
-    <span style="display:inline-block;background:#0891b2;color:#fff;padding:6px 10px;border-radius:999px;font-size:12px;margin:4px;">Acteurs économiques</span>
-    <span style="display:inline-block;background:#64748b;color:#fff;padding:6px 10px;border-radius:999px;font-size:12px;margin:4px;">Médias / sources</span>
-    <span style="display:inline-block;background:#c2410c;color:#fff;padding:6px 10px;border-radius:999px;font-size:12px;margin:4px;">Points de vigilance</span>
+    <span style="display:inline-block; margin:4px 6px 4px 0; padding:6px 10px; border-radius:999px; background:#fee2e2; color:#991b1b; font-size:12px; font-weight:700;">Opposants nommément cités</span>
+    <span style="display:inline-block; margin:4px 6px 4px 0; padding:6px 10px; border-radius:999px; background:#ede9fe; color:#5b21b6; font-size:12px; font-weight:700;">Élus critiques ou opposés</span>
+    <span style="display:inline-block; margin:4px 6px 4px 0; padding:6px 10px; border-radius:999px; background:#dbeafe; color:#1e40af; font-size:12px; font-weight:700;">Élus favorables, prudents ou ambigus</span>
+    <span style="display:inline-block; margin:4px 6px 4px 0; padding:6px 10px; border-radius:999px; background:#dbeafe; color:#1e3a8a; font-size:12px; font-weight:700;">Porteurs du projet</span>
+    <span style="display:inline-block; margin:4px 6px 4px 0; padding:6px 10px; border-radius:999px; background:#ccfbf1; color:#115e59; font-size:12px; font-weight:700;">Acteurs institutionnels / techniques</span>
+    <span style="display:inline-block; margin:4px 6px 4px 0; padding:6px 10px; border-radius:999px; background:#fef3c7; color:#92400e; font-size:12px; font-weight:700;">Collectifs citoyens / riverains</span>
+    <span style="display:inline-block; margin:4px 6px 4px 0; padding:6px 10px; border-radius:999px; background:#cffafe; color:#155e75; font-size:12px; font-weight:700;">Acteurs économiques / industriels</span>
+    <span style="display:inline-block; margin:4px 6px 4px 0; padding:6px 10px; border-radius:999px; background:#cffafe; color:#164e63; font-size:12px; font-weight:700;">Experts / chercheurs</span>
+    <span style="display:inline-block; margin:4px 6px 4px 0; padding:6px 10px; border-radius:999px; background:#f1f5f9; color:#475569; font-size:12px; font-weight:700;">Médias / sources / lieux cités</span>
+    <span style="display:inline-block; margin:4px 6px 4px 0; padding:6px 10px; border-radius:999px; background:#ffedd5; color:#9a3412; font-size:12px; font-weight:700;">Points de vigilance / griefs</span>
   </div>
 
   <!-- Élément Central -->
   <div style="text-align:center; padding:18px 0 24px 0; margin-bottom:18px;">
     <div style="display:inline-block; background:#111827; color:#ffffff; border-radius:999px; padding:22px 34px;">
-      <strong style="display:block; font-size:24px; line-height:1.1;">Ligne THT Amiens – Petit-Caux</strong>
-      <small style="display:block; margin-top:6px; color:#cbd5e1; font-size:13px;">Projet de liaison électrique associé aux besoins de décarbonation, de sécurisation du réseau et aux futurs EPR2.</small>
+      <strong style="display:block; font-size:26px; line-height:1.1;">Celtic Interconnector</strong>
+      <small style="display:block; margin-top:6px; color:#cbd5e1; font-size:13px;">Projet d’interconnexion électrique sous-marine et terrestre entre la France et l’Irlande.</small>
     </div>
   </div>
 
   <!-- CATEGORIE 1 : Opposants nommément cités -->
   <div style="display:block; width:100%; background:#ffffff; border:1px solid #e2e8f0; border-top:6px solid #dc2626; border-radius:18px; padding:18px; margin:0 0 18px 0; box-sizing: border-box;">
-    <h2 style="margin:0 0 14px 0; font-size:18px; color:#0f172a;">Opposants nommément cités</h2>
+    <h2 style="margin:0 0 14px 0; font-size:18px; line-height:1.2; color:#0f172a;">Opposants nommément cités</h2>
     <div class="grid-container" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
       
       <div style="background:#fef2f2; border:1px solid #fecaca; border-left:4px solid #dc2626; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Sylvain Finet</div>
-        <div style="font-size:12px; color:#475569;">Président de Stop THT 76-80. Conteste la justification énergétique du projet et annonce des recours.</div>
-      </div>
-
-      <div style="background:#fef2f2; border:1px solid #fecaca; border-left:4px solid #dc2626; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Francine Adam</div>
-        <div style="font-size:12px; color:#475569;">Riveraine opposée au passage de la ligne à proximité de son habitation ; évoque impacts paysagers et immobiliers.</div>
-      </div>
-
-      <div style="background:#fef2f2; border:1px solid #fecaca; border-left:4px solid #dc2626; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">José Adam</div>
-        <div style="font-size:12px; color:#475569;">Riverain opposé au projet ; refuse l’implantation de la ligne sur son secteur.</div>
-      </div>
-
-      <div style="background:#fef2f2; border:1px solid #fecaca; border-left:4px solid #dc2626; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Mathieu Massy & Reynald Massy</div>
-        <div style="font-size:12px; color:#475569;">Exploitants agricoles contestant les impacts sur les terres, les pylônes et les conditions d’exploitation.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Aucun opposant individuel au Celtic Interconnector clairement établi</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Le document contient des critiques du projet, mais pas d’opposant individuel nommément identifié comme tel.</div>
       </div>
       
     </div>
@@ -70,35 +54,45 @@
 
   <!-- CATEGORIE 2 : Élus critiques ou opposés -->
   <div style="display:block; width:100%; background:#ffffff; border:1px solid #e2e8f0; border-top:6px solid #7c3aed; border-radius:18px; padding:18px; margin:0 0 18px 0; box-sizing: border-box;">
-    <h2 style="margin:0 0 14px 0; font-size:18px; color:#0f172a;">Élus critiques ou opposés</h2>
+    <h2 style="margin:0 0 14px 0; font-size:18px; line-height:1.2; color:#0f172a;">Élus critiques ou opposés</h2>
     <div class="grid-container" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
       
       <div style="background:#f5f3ff; border:1px solid #ddd6fe; border-left:4px solid #7c3aed; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Christine Rodier</div>
-        <div style="font-size:12px; color:#475569;">Maire de Millebosc. Opposée au tracé traversant la forêt d’Eu et soutien explicite aux critiques du projet.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Malcolm Byrne</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Fianna Fáil TD pour Wexford/Wicklow. Critique ou inquiet sur le manque de clarté du calendrier et l’impact possible sur les objectifs offshore.</div>
+      </div>
+      
+      <div style="background:#f5f3ff; border:1px solid #ddd6fe; border-left:4px solid #7c3aed; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Jennifer Whitmore</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Social Democrats TD. Inquiète ou interrogative sur le retard, tout en rappelant l’utilité de l’interconnexion pour exporter ou importer de l’électricité.</div>
+      </div>
+      
+      <div style="background:#f5f3ff; border:1px solid #ddd6fe; border-left:4px solid #7c3aed; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Roderic O’Gorman</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Green Party TD for Dublin West. Acteur parlementaire demandeur d’information ; position non clairement opposée dans l’extraction.</div>
       </div>
       
     </div>
   </div>
 
-  <!-- CATEGORIE 3 : Élus favorables, prudents ou en négociation -->
+  <!-- CATEGORIE 3 : Élus favorables, prudents ou ambigus -->
   <div style="display:block; width:100%; background:#ffffff; border:1px solid #e2e8f0; border-top:6px solid #2563eb; border-radius:18px; padding:18px; margin:0 0 18px 0; box-sizing: border-box;">
-    <h2 style="margin:0 0 14px 0; font-size:18px; color:#0f172a;">Élus favorables, prudents ou en négociation</h2>
+    <h2 style="margin:0 0 14px 0; font-size:18px; line-height:1.2; color:#0f172a;">Élus favorables, prudents ou ambigus</h2>
     <div class="grid-container" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
       
       <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Rollon Mouchel-Blaisot</div>
-        <div style="font-size:12px; color:#475569;">Préfet de la Somme. Considère le projet nécessaire tout en recherchant des compromis sur les nuisances et compensations.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Micheál Martin</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Taoiseach. Position prudente ; indique avoir été informé de difficultés techniques susceptibles de retarder le projet.</div>
       </div>
-
+      
       <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Emmanuel Moulard</div>
-        <div style="font-size:12px; color:#475569;">Secrétaire général de la préfecture de la Somme. Présente les dispositifs d’accompagnement et d’indemnisation.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Darragh O’Brien</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Energy Minister. Position institutionnelle et explicative, évoquant un projet significatif et complexe dans un environnement maritime difficile.</div>
       </div>
-
+      
       <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Maire de Touffreville-sur-Eu</div>
-        <div style="font-size:12px; color:#475569;">Mentionné dans le corpus ; position non clairement établie dans l’extraction.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Timmy Dooley</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Minister of State, Department of Climate, Energy and the Environment ; Fine Gael TD. Position non établie ; destinataire d’une interpellation de Malcolm Byrne.</div>
       </div>
       
     </div>
@@ -106,153 +100,315 @@
 
   <!-- CATEGORIE 4 : Collectifs citoyens / riverains -->
   <div style="display:block; width:100%; background:#ffffff; border:1px solid #e2e8f0; border-top:6px solid #f59e0b; border-radius:18px; padding:18px; margin:0 0 18px 0; box-sizing: border-box;">
-    <h2 style="margin:0 0 14px 0; font-size:18px; color:#0f172a;">Collectifs citoyens / riverains</h2>
+    <h2 style="margin:0 0 14px 0; font-size:18px; line-height:1.2; color:#0f172a;">Collectifs citoyens / riverains</h2>
     <div class="grid-container" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
       
       <div style="background:#fffbeb; border:1px solid #fde68a; border-left:4px solid #f59e0b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Stop THT 76-80</div>
-        <div style="font-size:12px; color:#475569;">Principal collectif organisé contre le projet ; mobilisations locales et recours juridiques envisagés.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Uplift</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Mouvement citoyen irlandais. Critique des impacts des data centers sur le système électrique ; l’extraction ne l’établit pas comme opposant au Celtic Interconnector.</div>
+      </div>
+      
+      <div style="background:#fffbeb; border:1px solid #fde68a; border-left:4px solid #f59e0b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Don’t let Big Tech steal our light</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Campagne citoyenne liée à Uplift. Critique la consommation électrique des multinationales du numérique et demande un moratoire sur les data centers.</div>
+      </div>
+      
+      <div style="background:#fffbeb; border:1px solid #fde68a; border-left:4px solid #f59e0b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">SECAD Partnership CLG</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Administrateur et accompagnateur du Celtic Interconnector Community Benefit Fund. Contact d’aide pour les candidatures au fonds communautaire.</div>
+      </div>
+      
+      <div style="background:#fffbeb; border:1px solid #fde68a; border-left:4px solid #f59e0b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Community groups / not-for-profit organisations in east Cork</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Acteurs locaux bénéficiaires. 29 groupes et organisations reçoivent des financements dans le cadre du fonds communautaire associé au projet.</div>
       </div>
       
     </div>
   </div>
 
-  <!-- CATEGORIE 5 : Syndicats et organisations agricoles -->
-  <div style="display:block; width:100%; background:#ffffff; border:1px solid #e2e8f0; border-top:6px solid #ea580c; border-radius:18px; padding:18px; margin:0 0 18px 0; box-sizing: border-box;">
-    <h2 style="margin:0 0 14px 0; font-size:18px; color:#0f172a;">Syndicats et organisations agricoles</h2>
-    <div class="grid-container" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
-      
-      <div style="background:#fff7ed; border:1px solid #fed7aa; border-left:4px solid #ea580c; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">FDSEA 80, FDSEA Seine-Maritime, FNSEA 76</div>
-        <div style="font-size:12px; color:#475569;">Demandent une meilleure indemnisation et une prise en compte accrue des préjudices agricoles.</div>
-      </div>
-
-      <div style="background:#fff7ed; border:1px solid #fed7aa; border-left:4px solid #ea580c; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">JA 80 (Jeunes Agriculteurs Somme)</div>
-        <div style="font-size:12px; color:#475569;">Conteste les compensations proposées aux exploitants impactés.</div>
-      </div>
-
-      <div style="background:#fff7ed; border:1px solid #fed7aa; border-left:4px solid #ea580c; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Chambre d’agriculture de la Somme, PPR, CGB 80</div>
-        <div style="font-size:12px; color:#475569;">Parties prenantes des discussions ; alertent sur les impacts fonciers, logistiques et économiques.</div>
-      </div>
-      
-    </div>
-  </div>
-
-  <!-- CATEGORIE 6 : Associations environnementales -->
-  <div style="display:block; width:100%; background:#ffffff; border:1px solid #e2e8f0; border-top:6px solid #16a34a; border-radius:18px; padding:18px; margin:0 0 18px 0; box-sizing: border-box;">
-    <h2 style="margin:0 0 14px 0; font-size:18px; color:#0f172a;">Associations environnementales</h2>
-    <div class="grid-container" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
-      
-      <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-left:4px solid #16a34a; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Associations nationales de défense de l’environnement</div>
-        <div style="font-size:12px; color:#475569;">Soutien annoncé à Stop THT 76-80 ; aucune organisation n’est nommément identifiée dans l’extraction.</div>
-      </div>
-      
-    </div>
-  </div>
-
-  <!-- CATEGORIE 7 : Porteurs du projet -->
+  <!-- CATEGORIE 5 : Porteurs du projet -->
   <div style="display:block; width:100%; background:#ffffff; border:1px solid #e2e8f0; border-top:6px solid #1d4ed8; border-radius:18px; padding:18px; margin:0 0 18px 0; box-sizing: border-box;">
-    <h2 style="margin:0 0 14px 0; font-size:18px; color:#0f172a;">Porteurs du projet</h2>
+    <h2 style="margin:0 0 14px 0; font-size:18px; line-height:1.2; color:#0f172a;">Porteurs du projet</h2>
     <div class="grid-container" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
       
       <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #1d4ed8; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">RTE</div>
-        <div style="font-size:12px; color:#475569;">Porteur principal. Défend un projet jugé indispensable à la transition énergétique et à la sécurisation du réseau.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">EirGrid</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Gestionnaire public irlandais du réseau électrique et co-porteur du projet côté irlandais. Confirme des retards liés à la fabrication, aux conditions marines et au terrain sous-marin.</div>
       </div>
-
+      
       <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #1d4ed8; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Enedis</div>
-        <div style="font-size:12px; color:#475569;">Co-porteur de certaines infrastructures associées ; soutien au projet.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">RTE / Réseau de Transport d’Électricité</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Gestionnaire français du réseau de transport d’électricité et co-porteur côté français. Présente le projet comme stratégique pour la sécurité d’approvisionnement, la solidarité électrique et l’intégration des renouvelables.</div>
       </div>
-
+      
       <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #1d4ed8; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Cyril Wagner</div>
-        <div style="font-size:12px; color:#475569;">Directeur adjoint ingénierie RTE Hauts-de-France ; porte-parole favorable au projet et au tracé retenu.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Régis Boigegrain</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Directeur général de la division gestion des infrastructures, membre du directoire de RTE. Porte-parole RTE sur le lancement de la phase française.</div>
+      </div>
+      
+      <div style="background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #1d4ed8; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Rémi Courtial</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Directeur du projet Celtic Interconnector pour RTE. Défend le projet comme un acte de souveraineté européenne et de soutien énergétique entre pays.</div>
       </div>
       
     </div>
   </div>
 
-  <!-- CATEGORIE 8 : Acteurs institutionnels / techniques -->
+  <!-- CATEGORIE 6 : Acteurs institutionnels / techniques -->
   <div style="display:block; width:100%; background:#ffffff; border:1px solid #e2e8f0; border-top:6px solid #0f766e; border-radius:18px; padding:18px; margin:0 0 18px 0; box-sizing: border-box;">
-    <h2 style="margin:0 0 14px 0; font-size:18px; color:#0f172a;">Acteurs institutionnels / techniques</h2>
+    <h2 style="margin:0 0 14px 0; font-size:18px; line-height:1.2; color:#0f172a;">Acteurs institutionnels / techniques</h2>
     <div class="grid-container" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
       
       <div style="background:#f0fdfa; border:1px solid #99f6e4; border-left:4px solid #0f766e; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Préfecture de la Somme & Préfecture de Seine-Maritime</div>
-        <div style="font-size:12px; color:#475569;">Pilotage administratif, procédures et accompagnement institutionnel du dossier.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Commission européenne / Union européenne</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Institution européenne, financeur et soutien du projet. Le projet est reconnu d’intérêt commun ; les montants de subvention varient selon les articles du corpus.</div>
       </div>
-
+      
       <div style="background:#f0fdfa; border:1px solid #99f6e4; border-left:4px solid #0f766e; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">CNDP, Commission d’enquête publique, Autorité environnementale</div>
-        <div style="font-size:12px; color:#475569;">Instances de concertation, d’évaluation et de recueil des avis ; position institutionnelle ou neutre.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">CINEA</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Agence européenne mentionnée comme soutien institutionnel du projet.</div>
       </div>
-
+      
       <div style="background:#f0fdfa; border:1px solid #99f6e4; border-left:4px solid #0f766e; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Commission indépendante d’indemnisation</div>
-        <div style="font-size:12px; color:#475569;">Évalue les préjudices fonciers ; rôle technique et neutre.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Commission for Regulation of Utilities / CRU</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Régulateur irlandais. Autorité compétente pour autoriser l’intégration de nouvelles charges liées au projet dans les coûts réseau.</div>
+      </div>
+      
+      <div style="background:#f0fdfa; border:1px solid #99f6e4; border-left:4px solid #0f766e; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">CIDAC / Celtic Interconnector Designated Activity Company</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Structure projet mentionnée pour des opérations et contrats. Associée aux opérations de réparation ou de câblage et au contrat d’assistance à maîtrise d’ouvrage d’Assystem.</div>
       </div>
       
     </div>
   </div>
 
-  <!-- CATEGORIE 9 : Acteurs économiques / industriels -->
+  <!-- CATEGORIE 7 : Acteurs économiques / industriels -->
   <div style="display:block; width:100%; background:#ffffff; border:1px solid #e2e8f0; border-top:6px solid #0891b2; border-radius:18px; padding:18px; margin:0 0 18px 0; box-sizing: border-box;">
-    <h2 style="margin:0 0 14px 0; font-size:18px; color:#0f172a;">Acteurs économiques / industriels</h2>
+    <h2 style="margin:0 0 14px 0; font-size:18px; line-height:1.2; color:#0f172a;">Acteurs économiques / industriels</h2>
     <div class="grid-container" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
       
-      <div style="background:#f0f9ff; border:1px solid #bae6fd; border-left:4px solid #0891b2; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">EDF</div>
-        <div style="font-size:12px; color:#475569;">Maison mère de RTE mentionnée dans le corpus ; aucune position propre rapportée.</div>
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0891b2; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Nexans</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Industriel câblier. Responsable de l’ingénierie, de la fabrication et de l’installation du système complet de câbles.</div>
       </div>
-
-      <div style="background:#f0f9ff; border:1px solid #bae6fd; border-left:4px solid #0891b2; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Eiffage</div>
-        <div style="font-size:12px; color:#475569;">Mentionnée par des opposants dans le contexte des travaux ; rôle précis et position non documentés.</div>
+      
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0891b2; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Siemens Energy</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Entreprise industrielle de l’énergie. Intervient avec NGE sur la station d’Ar Merzher et sur la mise en service des équipements.</div>
+      </div>
+      
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0891b2; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Alexandre Pinson</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Chef de projet Siemens Energy. Responsable projet sur la station de conversion, dont il décrit l’achèvement avec des partenaires locaux pour RTE.</div>
+      </div>
+      
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0891b2; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">NGE</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Groupe français de construction et BTP. Réalise la station de conversion d’Ar Merzher avec Siemens Energy.</div>
+      </div>
+      
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0891b2; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Stéphane Perez</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Directeur général de NGE. Porte-parole du groupe sur la complexité du chantier et la souveraineté énergétique européenne.</div>
+      </div>
+      
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0891b2; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Eiffage Énergie Systèmes</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Entreprise énergie et réseaux. Réalise des travaux de liaison terrestre côté français pour Nexans / RTE.</div>
+      </div>
+      
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0891b2; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Hervé Burel</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Chef de projet Eiffage Énergie Systèmes – Réseaux & Solutions. Décrit les premiers kilomètres construits et les mesures de décarbonation du chantier.</div>
+      </div>
+      
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0891b2; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Vincent Morice</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Chef de projet EES / Eiffage Énergie Systèmes – Île-de-France. Responsable de la pose de modules de câbles de puissance, fibres optiques et câbles de réserve.</div>
+      </div>
+      
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0891b2; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">DLE Ouest</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Entreprise de travaux. Réalise un tronçon de liaison souterraine jusqu’à la station de conversion.</div>
+      </div>
+      
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0891b2; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Eiffage Génie Civil / Eiffage Fondations</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Entreprises de travaux. Participent aux microtunnels, au forage sous la LGV Paris-Brest et sous l’Élorn, ainsi qu’aux infrastructures terrestres.</div>
+      </div>
+      
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0891b2; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; margin-bottom:5px;">Van Oord</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Entreprise maritime. Réalise des opérations de câbles dans la mer Celtique pour Nexans / CIDAC et signale des périmètres de sécurité aux marins.</div>
+      </div>
+      
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0891b2; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Assystem</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Groupe d’ingénierie. Titulaire d’un contrat auprès de CIDAC pour accompagner la conception et la construction de la station de conversion française.</div>
       </div>
       
     </div>
   </div>
 
-  <!-- CATEGORIE 10 : Médias / relais / sources citées -->
+  <!-- CATEGORIE 8 : Experts / chercheurs -->
+  <div style="display:block; width:100%; background:#ffffff; border:1px solid #e2e8f0; border-top:6px solid #0e7490; border-radius:18px; padding:18px; margin:0 0 18px 0; box-sizing: border-box;">
+    <h2 style="margin:0 0 14px 0; font-size:18px; line-height:1.2; color:#0f172a;">Experts / chercheurs</h2>
+    <div class="grid-container" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
+      
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0e7490; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Alan McSweeney</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Consultant spécialisé en coûts de projet. Analyste critique des coûts, estimant que le coût final pourrait atteindre 2,1 à 2,8 Md€.</div>
+      </div>
+      
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0e7490; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Barry Hayes</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Associate professor in electrical power systems, UCC. Juge le retard défavorable aux consommateurs et souligne l’intérêt du projet pour la sécurité d’approvisionnement et les prix.</div>
+      </div>
+      
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0e7490; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Paul Cuffe</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Associate professor, UCD School of Electrical and Electronic Engineering. Qualifie le retard de frustrant et insiste sur l’intérêt d’une alternative en cas de hausse des prix du gaz.</div>
+      </div>
+      
+      <div style="background:#ecfeff; border:1px solid #a5f3fc; border-left:4px solid #0e7490; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Paul Leahy</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Senior lecturer in wind energy, UCC. Alerte sur le resserrement entre capacité d’approvisionnement et demande, notamment avec la croissance des data centers.</div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- CATEGORIE 9 : Médias / sources / lieux cités -->
   <div style="display:block; width:100%; background:#ffffff; border:1px solid #e2e8f0; border-top:6px solid #64748b; border-radius:18px; padding:18px; margin:0 0 18px 0; box-sizing: border-box;">
-    <h2 style="margin:0 0 14px 0; font-size:18px; color:#0f172a;">Médias / relais / sources citées</h2>
+    <h2 style="margin:0 0 14px 0; font-size:18px; line-height:1.2; color:#0f172a;">Médias / sources / lieux cités</h2>
     <div class="grid-container" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
       
       <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #64748b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">ICI Normandie / Radio France, Le Parisien, Actu.fr</div>
-        <div style="font-size:12px; color:#475569;">Sources de couverture médiatique du projet et de la contestation locale.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">news.google.com</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Agrégateur et reprise de presse. Source de nombreuses reprises d’articles du corpus.</div>
       </div>
-
+      
       <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #64748b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Courrier Picard, Action Agricole Picarde, Google News, RTE France, CNDP, Curebot</div>
-        <div style="font-size:12px; color:#475569;">Sources d’information, de concertation ou de compilation documentaire utilisées dans le corpus.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">The Irish Times</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Presse irlandaise. Article sur les coûts possibles liés aux retards.</div>
+      </div>
+      
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #64748b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Irish Examiner</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Presse irlandaise. Articles sur les retards, l’absence de clarté, les impacts prix et la sécurité énergétique.</div>
+      </div>
+      
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #64748b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Offshore Energy</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Média spécialisé énergie offshore. Articles sur les étapes techniques : tirage, station et pose de câbles.</div>
+      </div>
+      
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #64748b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">La Tribune</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Média économique français. Article sur l’ensouillage côté français et l’avancement du chantier.</div>
+      </div>
+      
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #64748b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">TF1 Info</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Média national français. Reportage grand public sur le chantier de pose en mer et l’intérêt énergétique pour la Bretagne.</div>
+      </div>
+      
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #64748b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Breizh-info.com</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Média régional / politique breton. Article sur la station de conversion et la souveraineté énergétique européenne.</div>
+      </div>
+      
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #64748b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Voiries et Réseaux</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Média professionnel travaux / infrastructures. Article sur la station de conversion de La Martyre et le rôle de NGE.</div>
+      </div>
+      
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #64748b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Silicon Republic</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Média tech / innovation irlandais. Article sur l’étape franchie dans le projet et la station Ar Merzher.</div>
+      </div>
+      
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #64748b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Afloat.ie</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Média maritime irlandais. Notices maritimes sur les opérations de câbles, réparations et sécurité maritime.</div>
+      </div>
+      
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #64748b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Mer et Marine</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Média maritime français. Articles sur les navires câbliers et campagnes d’études en mer.</div>
+      </div>
+      
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #64748b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Révolution Énergétique</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Média énergie. Article sur le début de pose côté français et le coût du projet.</div>
+      </div>
+      
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #64748b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">ABP / Agence Bretagne Presse</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Média breton. Article de 2019 sur la concertation et commentaires de lecteurs.</div>
+      </div>
+      
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #64748b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Capital.fr</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Média économique. Mention du contrat Assystem / CIDAC.</div>
+      </div>
+      
+      <div style="background:#f8fafc; border:1px solid #cbd5e1; border-left:4px solid #64748b; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Cork Chamber / EirGrid communication</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Source institutionnelle / économique locale. Relais des financements communautaires accordés en East Cork.</div>
       </div>
       
     </div>
   </div>
 
-  <!-- CATEGORIE 11 : Points de vigilance / griefs -->
+  <!-- CATEGORIE 10 : Points de vigilance / griefs -->
   <div style="display:block; width:100%; background:#ffffff; border:1px solid #e2e8f0; border-top:6px solid #c2410c; border-radius:18px; padding:18px; margin:0 0 18px 0; box-sizing: border-box;">
-    <h2 style="margin:0 0 14px 0; font-size:18px; color:#0f172a;">Points de vigilance / griefs</h2>
+    <h2 style="margin:0 0 14px 0; font-size:18px; line-height:1.2; color:#0f172a;">Points de vigilance / griefs</h2>
     <div class="grid-container" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;">
       
       <div style="background:#fff7ed; border:1px solid #fed7aa; border-left:4px solid #c2410c; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Environnement et paysage</div>
-        <div style="font-size:12px; color:#475569;">Déforestation, biodiversité, espèces protégées, artificialisation et impact visuel des pylônes.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Retard du projet</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Le corpus évoque une échéance fin 2028 / Q4 2028, avec risque de nouveau décalage lié aux conditions météorologiques et maritimes.</div>
       </div>
-
+      
       <div style="background:#fff7ed; border:1px solid #fed7aa; border-left:4px solid #c2410c; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Impacts humains et agricoles</div>
-        <div style="font-size:12px; color:#475569;">Cadre de vie, dévalorisation immobilière, contraintes d’exploitation, perte de productivité et compensations jugées insuffisantes.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Coûts et financement</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Des calculs évoquent un passage possible d’environ 1,62 Md€ à plus de 2 Md€, voire 2,1 à 2,8 Md€ selon Alan McSweeney.</div>
       </div>
-
+      
       <div style="background:#fff7ed; border:1px solid #fed7aa; border-left:4px solid #c2410c; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
-        <div style="font-weight:700; font-size:14px; margin-bottom:5px;">Justification et concertation</div>
-        <div style="font-size:12px; color:#475569;">Contestations de la nécessité énergétique du projet et critiques sur les alternatives étudiées et la concertation.</div>
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Impact consommateurs irlandais</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Les coûts pourraient être intégrés aux charges de réseau, sous réserve d’autorisation de la CRU.</div>
+      </div>
+      
+      <div style="background:#fff7ed; border:1px solid #fed7aa; border-left:4px solid #c2410c; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Sécurité d’approvisionnement irlandaise</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Le document souligne une fragilité liée à la dépendance au gaz importé et au resserrement entre capacité d’approvisionnement et demande.</div>
+      </div>
+      
+      <div style="background:#fff7ed; border:1px solid #fed7aa; border-left:4px solid #c2410c; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Data centers</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">La croissance de la demande électrique, notamment liée aux data centers, est identifiée comme pression structurante sur le système irlandais.</div>
+      </div>
+      
+      <div style="background:#fff7ed; border:1px solid #fed7aa; border-left:4px solid #c2410c; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Gouvernance territoriale bretonne</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Certains passages estiment que la Bretagne accueille et finance une infrastructure décidée dans des logiques françaises et européennes sans contrôle local réel.</div>
+      </div>
+      
+      <div style="background:#fff7ed; border:1px solid #fed7aa; border-left:4px solid #c2410c; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Arbitrages de marché</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Les flux d’électricité sont présentés comme susceptibles de suivre les zones les plus rentables plutôt qu’un bénéfice local.</div>
+      </div>
+      
+      <div style="background:#fff7ed; border:1px solid #fed7aa; border-left:4px solid #c2410c; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Contraintes environnementales et techniques</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Le corpus mentionne conditions marines, terrain sous-marin difficile, ensouillage, protection des câbles, espèces protégées, espèces invasives et emprises de chantier.</div>
+      </div>
+      
+      <div style="background:#fff7ed; border:1px solid #fed7aa; border-left:4px solid #c2410c; border-radius:14px; padding:10px 12px; box-sizing: border-box;">
+        <div style="font-weight:700; color:#0f172a; font-size:14px; line-height:1.2; margin-bottom:5px;">Incohérences documentaires</div>
+        <div style="color:#475569; font-size:12px; line-height:1.35;">Les montants européens et certaines données calendaires divergent selon les articles ; il faut éviter de figer un chiffre ou une date sans préciser la source.</div>
       </div>
       
     </div>
@@ -260,7 +416,8 @@
 
   <!-- Lecture synthétique -->
   <div style="margin-top:8px; padding:16px 18px; border-radius:14px; background:#fff7ed; border:1px solid #fed7aa; color:#7c2d12; font-size:13px; line-height:1.45; box-sizing: border-box;">
-    <strong>Lecture synthétique :</strong> Le projet est porté principalement par RTE and soutenu au nom de la transition énergétique, du raccordement des futurs EPR2 and de la sécurisation du réseau. L’opposition est structurée autour de Stop THT 76-80, de riverains and de quelques élus locaux, avec un argumentaire centré sur la forêt d’Eu, les impacts paysagers, agricoles and fonciers. Les organisations agricoles apparaissent surtout en position de négociation sur les compensations plutôt qu’en opposition systématique au projet. Plusieurs acteurs institutionnels conservent une posture de médiation ou de neutralité procédurale.
+    <strong>Lecture synthétique :</strong> L’analyse ne fait pas apparaître d’opposant individuel clairement établi au Celtic Interconnector. Le rapport de force se structure plutôt autour de porteurs institutionnels et industriels très identifiés, d’élus irlandais inquiets du calendrier, d’experts critiques sur les coûts et les impacts consommateurs, et de griefs transversaux liés aux retards, à la facture, à la sécurité d’approvisionnement, aux data centers, aux arbitrages de marché et à la gouvernance territoriale bretonne.
+    <br><small><em>*Source : d’après l’analyse du 10/06/2026</em></small>
   </div>
 
 </div>
